@@ -34,6 +34,7 @@ namespace WpfApplication4
             udpClient.Client.SetSocketOption(
             SocketOptionLevel.Socket, SocketOptionName.ReuseAddress, true);
             udpClient.Client.Bind(endPoint);
+			HelloviaDebug();
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
@@ -45,7 +46,11 @@ namespace WpfApplication4
             IPEndPoint groupEP = new IPEndPoint(IPAddress.Any, 30303);
 
         }
+        private void HelloviaDebug()
+        {
+				 System.Diagnostics.Debug.Write( "Hello via Debug!" );
 
+        }
 
         private void ReceiveMessage()
         {

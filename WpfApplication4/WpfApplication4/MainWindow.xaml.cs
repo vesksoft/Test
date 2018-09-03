@@ -51,7 +51,11 @@ namespace WpfApplication4
 				 System.Diagnostics.Debug.Write( "Hello via Debug!" );
 
         }
+        private void HelloviaDebug2()
+        {
+				 System.Diagnostics.Debug.Write( "Hello via Debug!" );
 
+        }
         private void ReceiveMessage()
         {
             //while (true)
